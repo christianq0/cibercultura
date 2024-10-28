@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelliweb UNAD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        .message {
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid #0077cc;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+        .instructions {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-left: 4px solid #0077cc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplo Avanzado: Interactividad con JavaScript</h1>
+        <p><b>Intelliweb UNAD</b></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>Este ejemplo demuestra cómo crear una página interactiva utilizando generadores de codidgo en ChatGPT y similares para el curso de Cibercultura.</p>
+        </section>
+
+        <section>
+            <h2>Prueba la Interactividad</h2>
+            <p>Haz clic en el botón para generar un mensaje interactivo:</p>
+            <button onclick="showMessage()">Haz clic aquí</button>
+            <div id="messageContainer" class="message" style="display: none;">
+                <!-- Con ChatGPT y el documento entregado en Cibercultura podrás crear páginas web. -->
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>¿Cómo Funciona Este Código?</h2>
+            <ol>
+		<li><h3>No se requiere!! Solo puedes cambiar bloques de texto en el codigo y listo, pero si quieres saber un poco más es así:</h3></li>
+                <li>Cuando haces clic en el botón, el navegador ejecuta la función <code>showMessage()</code> escrita en JavaScript.</li>
+                <li>Esta función selecciona el contenedor de mensaje (<code>messageContainer</code>) y le da un mensaje para mostrar.</li>
+                <li>Además, cambia el estilo CSS del contenedor para hacerlo visible.</li>
+                <li>El código JavaScript y HTML se integran para que el botón sea interactivo y muestre contenido dinámico.</li>
+            </ol>
+        </section>
+        
+        <section>
+        
+        </section>
+    </main>
+
+    <footer>
+        <p>Ejemplo de codigo generado para el curso de cibercultura de la UNAD © 2024</p>
+    </footer>
+
+    <!-- Código JavaScript -->
+    <script>
+        // Esta función se ejecuta cuando el usuario hace clic en el botón
+        function showMessage() {
+            // Selecciona el contenedor de mensaje
+            const messageContainer = document.getElementById("messageContainer");
+            
+            // Agrega un mensaje dinámico
+            messageContainer.innerHTML = "¡Este es un mensaje para la profesora Mónica Flor de Cibercultura!";
+            
+            // Cambia el estilo para mostrar el mensaje
+            messageContainer.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
